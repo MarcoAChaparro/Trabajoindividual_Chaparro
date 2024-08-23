@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <a href="#about">Sobre mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#gitignore">Gitignore</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="imagenes/foto.PNG" alt="Mi Foto">
+        <div class="description">
+            <h2>Sobre mí</h2>
+            <p>Soy un estudiante de ingeniería multimedia con habilidades en la creación de páginas web con HTML y CSS. Además, tengo conocimientos en la creación de modelos 3D utilizando Blender, lo que me convierte en un desarrollador multidisciplinario.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-section">
+            <div class="hard-skills">
+                <h3>Habilidades duras</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Blender</li>
+                    <li>Cisco Packet Tracer</li>
+                </ul>
+            </div>
+            <div class="soft-skills">
+                <h3>Habilidades blandas</h3>
+                <ul>
+                    <li>Comunicación efectiva</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Respuesta al estrés</li>
+                    <li>Gestión del tiempo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <div class="proyecto-texto">
+                <h3><a href="https://github.com/MarcoAChaparro/Actividad1" target="_blank" class="proyecto-link">Trabajo HTML-CSS básico</a></h3>
+                <p>Descripción del proyecto 1. Este proyecto consistió en la creación de una página web sencilla utilizando HTML y CSS, familiarizándome con Visual Studio Code.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="proyecto-texto">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2. Aplicación web de comercio electrónico que permite a los usuarios realizar compras online.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="proyecto-texto">
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto 3. Página web corporativa con un blog integrado para compartir artículos y noticias.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gitignore">
+        <h2>Eliminar archivos con gitignore</h2>
+        <h3>Paso 1: Crea o edita el archivo .gitignore</h3>
+        <p>El archivo .gitignore le indica a Git qué archivos o carpetas debe ignorar. Puedes crearlo en la raíz de tu proyecto o editarlo si ya existe.</p>
+
+        <h3>Paso 2: Agrega las rutas o nombres de los archivos/carpetas a ignorar</h3>
+        <p>Dentro del archivo .gitignore, escribe el nombre o la ruta de los archivos o carpetas que ya no quieres rastrear. Ejemplos:</p>
+        <code>/ruta/al/archivo.txt  
+/carpeta/*</code>
+
+        <h3>Paso 3: Elimina los archivos de Git sin borrarlos del disco</h3>
+        <p>Para eliminar los archivos que ya no quieres rastrear sin eliminarlos de tu sistema local, ejecuta el siguiente comando en tu terminal:</p>
+        <code>git rm --cached archivo.txt</code>
+
+        <h3>Paso 4: Confirma los cambios</h3>
+        <p>Después de eliminar los archivos del seguimiento de Git, confirma los cambios con el siguiente comando:</p>
+        <code>git commit -m "Dejar de rastrear archivo(s)"</code>
+
+        <h3>Paso 5: Verifica y sube los cambios al repositorio remoto</h3>
+        <p>Verifica que los archivos se estén ignorando correctamente y luego sube los cambios a tu repositorio remoto:</p>
+        <code>git push origin main</code>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="redes-icon">
+            <a href="https://www.instagram.com/marco__chaparro/" target="_blank">
+                <img src="imagenes/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/marcoantonio.chaparromorales?locale=es_LA" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://github.com/MarcoChaparro" target="_blank">
+                <img src="imagenes/github.png" alt="GitHub">
+            </a>
+        </div>
+    </section>
+
+</body>
+</html>
